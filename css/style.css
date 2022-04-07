@@ -620,3 +620,60 @@ ul li:nth-child(4) {
     border-color: transparent;
   }
 }
+
+/* inicio galeria*/
+
+#galeria .col-lg-4 {
+  /*cambio a todas las columnas donde estan las fotos*/
+  margin: 0 !important;
+  /*columnas sin margenes*/
+  padding: 25px;
+  /*fondo en las imagenes*/
+}
+
+#galeria img {
+  width: 100%;
+  /*ancho de imagenes*/
+}
+
+#galeria h4 {
+  font-family: 'caviardreams';
+}
+
+#galeria img:hover {
+  /* animacion en las imagenes*/
+  border: 5px solid #999
+}
+
+
+#img1 {
+  /* estilos para las imagenes de los productos*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  width: 33%;
+  border: 11px solid #999
+}
+
+#titulo {
+  /* estilo para el titulo de los productos*/
+  font-family: 'floraldreams';
+  text-align: center;
+  padding: 2rem;
+}
+
+#desc {
+  /*estilo para las descripciones de los productos*/
+  font-family: 'caviardreams';
+  text-align: center;
+  padding: 5px 300px;
+
+}
+
+.logogaleria img {
+  display: block;
+  margin: auto;
+  height: 350px;
+
+}
