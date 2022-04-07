@@ -1,14 +1,77 @@
 /*Se crea plantilla de estilo*/
+
+@font-face {
+  font-family: "caviardreams";
+  src: url(../fonts/caviar_dreams/CaviarDreams.ttf);
+}
+
+
+
+@font-face {
+  font-family: "floraldreams";
+  src: url(../fonts/floral_dream/Floral\ Dream.ttf);
+}
+
+body {
+  background-color: #cdf9fc;
+  background-image: linear-gradient(180deg, #cdf9fc 25%, #52ACFF 100%);
+}
+
 .site-header {
-    background-color: rgba(0, 0, 0, .85);
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    backdrop-filter: saturate(180%) blur(20px);
-  }
-  .site-header a {
-    color: #999;
-    transition: ease-in-out color .15s;
-  }
-  .site-header a:hover {
-    color: #fff;
-    text-decoration: none;
-  }
+  text-size-adjust: 10px;
+  background-color: rgba(0, 0, 0, .85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  font-family: 'caviardreams';
+}
+
+.site-header a {
+  color: #999;
+  transition: ease-in-out color .15s;
+
+}
+
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+  transform: scale(1.1);
+  transition: 0.4s;
+}
+ 
+/* logo parrafo y baners*/
+
+.baner img {
+  display: block;
+  margin: auto;
+}
+
+.baner {
+  background-color: #d5e4c3;
+  border-bottom: 2px solid rgb(52, 54, 56);
+}
+
+.logoparrafo img {
+  display: block;
+  margin: auto;
+  height: 450px;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+
+}
+
+.logoparrafo :hover>img {  /*hober   para imagen dek article logo*/
+  transform: scale(1.05);
+  transition: 0.4s;
+}
+
+.logoparrafo {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-image: url(../img/bannerparrafo.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
