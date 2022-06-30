@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    {% load static %}
+  <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>GALERIA</title>
+  </head>
+
+  <body>
+       <!--INICIO DE BOTONES-->
+    <nav class="site-header sticky-top py-1">
+        <div class="container d-flex flex-column flex-md-row justify-content-between ">
+    
+          <a class="py-4 d-none d-md-inline-block text-decoration-none" href="{% url 'galeria' %}">VOLVER</a>
+        
+          <a class="py-4 d-none d-md-inline-block text-decoration-none" href="{% static 'core/img/mantenimiento-del-sitio-web.jpg' %}">COMPRAR</a>
+        </div>
+      </nav> <!-- fin de botones-->
+
+
+      <div id="titulo">
+        <h1>MACETERO REDONDO</h1>
+             <H1>ESTILO RATAN</H1>
+      </div>
+
+      <div id="img1" class="text-center">
+        <img src="{% static 'core/img/macetero.jfif' %}" class="rounded" alt="...">
+      </div>
+      <div id="desc">
+          <p>Dale un toque único a tus espacios con este Macetero de la marca Reyplast.
+            Confeccionado en plástico posee un hermoso diseño y un tamaño ideal para lucir
+             tus flores y plantas donde decidas.</p>    
+            <h2>
+                Valor $ 4.000
+            </h2>
+      </div>
+
+      <footer id="footer">
+        <h1 id="titulofooter">
+          Contactanos en nuestras redes
+        </h1>
+        <div id="socials">
+          <a href="https://web.facebook.com/Deco-Plants-108161155177454"> <img class="socialslogo"
+              src="{% static 'core/img/facebook.png' %}" alt="logoface"></a>
+          <a href="https://goo.gl/maps/sDKpmiqVjZyk9FQA7"> <img class="socialslogo" src="{% static 'core/img/google.png' %}"
+              alt="logoinsta"></a>
+          <a href="https://www.instagram.com/deco_plants_amigas/"> <img class="socialslogo"
+              src="{% static 'core/img/instagram.png' %}" alt="logoinsta"></a>
+          <a href="https://twitter.com/?lang=es"><img class="socialslogo" src="{% static 'core/img/twtitter.png' %}"
+              alt="logo twtitter"></a>
+          <a href="https://github.com/paulo4ciz/proyecto_semestral"><img class="socialslogo"
+              src="{% static 'core/img/github.png.png' %}" alt="logoinsta"></a>
+        </div>
+    
+        <header class="linksfooter">
+          <div class="headfooter">
+            <div class="hipervinculosfooter">
+              <h2>Servicio al cliente</h2>
+              <a href="{% static 'core/img/mantenimiento-del-sitio-web.jpg' %}">Seguimiento de pedidos</a>
+              <a href="{% static 'core/img/mantenimiento-del-sitio-web.jpg' %}">Terminos y condiciones</a>
+              <a href="{% static 'core/img/mantenimiento-del-sitio-web.jpg' %}">Medios de Pago</a>
+              <a href="{% static 'core/img/mantenimiento-del-sitio-web.jpg' %}">Dejanos tu opninion</a>
+            </div>
+    
+            <div class="hipervinculosfooter">
+              <h2>Nuestra Empresa</h2>
+              <a href="{% static 'core/img/mantenimiento-del-sitio-web.jpg' %}">Clientes</a>
+              <a href="{% static 'core/img/mantenimiento-del-sitio-web.jpg' %}">Nuestro team</a>
+              <a href="{% static 'core/img/mantenimiento-del-sitio-web.jpg' %}">Vision y futuro</a>
+              <a href="{% static 'core/img/mantenimiento-del-sitio-web.jpg' %}">Inversionistas y partners</a>
+    
+            </div>
+    
+            <div class="hipervinculosfooter">
+              <h2>Nuestros Productos</h2>
+              <a href="{% static 'core/img/mantenimiento-del-sitio-web.jpg' %}">Plantas indoor</a>
+              <a href="{% static 'core/img/mantenimiento-del-sitio-web.jpg' %}">Plantas outdoor</a>
+              <a href="{% static 'core/img/mantenimiento-del-sitio-web.jpg' %}">Nuestras semillas</a>
+              <a href="{% static 'core/img/mantenimiento-del-sitio-web.jpg' %}">Como plantar en tu casa</a>
+    
+            </div>
+    
+          </div>
+        </header>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2022 Todos los Derechos reservados:
+          <a class="text-white" href="{% static 'core/img/mantenimiento-del-sitio-web.jpg' %}">decoplants.com</a>
+        </div>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    
+  </body>
+</html>
