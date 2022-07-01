@@ -35,16 +35,18 @@
 
     <div class="formulariosection">
         <main>
-            <div class="row">
+            <div class="">
 
                 <h2>Editar Producto</h2>
                 <form action="" method="post" enctype="multipart/form-data">
                     {% csrf_token %}
                     {{ form | crispy }}
                     <div class="d-flex justify-content-end">
-                        <input type="reset" value="Cancelar" class="btn btn-secundary">
+                    
                         &nbsp;
-                        <input type="submit" value="Editar" class="btn btn-primary">
+                        <div class="d-grid gap-2 col-6 mx-auto"></div>
+                        <input type="submit" value="Modificar" class="btn btn-warning">
+                    </div>
                     </div>
                 </form>
             </div>
