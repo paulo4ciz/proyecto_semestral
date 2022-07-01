@@ -23,12 +23,21 @@
       <a class="py-4 d-none d-md-inline-block text-decoration-none" href="{% url 'about' %}">QUIENES SOMOS</a>
       <a class="py-4 d-none d-md-inline-block text-decoration-none" href="{% url 'galeria' %}">GALERÍA</a>
       <a class="py-4 d-none d-md-inline-block text-decoration-none" href="#footer">CONTACTANOS</a>
-      <a class="py-4 d-none d-md-inline-block text-decoration-none" href="{% url 'register' %}">REGISTRATE</a>
-      <a class="py-4 d-none d-md-inline-block text-decoration-none" href="{% url 'login' %}">INICIAR SESION</a>
-
+      
+      {% if user.is_authenticated %}
+        <a class="py-4 d-none d-md-inline-block text-decoration-none" href="{% url 'listar_productos' %}">LISTAR PRODUCTOS</a>
+        <a class="py-4 d-none d-md-inline-block text-decoration-none" href="{% url 'agregar_producto' %}">AGREGAR PRODUCTOS</a>
+        <a class="py-4 d-none d-md-inline-block text-decoration-none" href="{% url 'logout' %}">CERRAR SESION</a>
+      
+      {% else %}
+      
+        <a class="py-4 d-none d-md-inline-block text-decoration-none" href="{% url 'register' %}">REGISTRATE</a>
+        <a class="py-4 d-none d-md-inline-block text-decoration-none" href="{% url 'login' %}">INICIAR SESION</a>
+      
+      {% endif %}
 
     </div>
-  </nav> <!-- fin de botones-->
+  </nav>
   <div class="logogaleria">
     <img src="{% static 'core/img/galeria.png' %}" class="img-fluid" alt="...">
   </div>
